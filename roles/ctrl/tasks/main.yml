@@ -1,0 +1,11 @@
+- name: Install Memcached
+  apt:
+    name: memcached
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: Install Etcd
+  apt:
+    name: etcd
+    state: present
+  when: ansible_os_family == "Debian"

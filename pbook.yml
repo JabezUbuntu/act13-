@@ -1,0 +1,8 @@
+- name: Deploy OpenStack Components
+  hosts: all
+  become: yes
+
+  roles:
+    - ctrl
+    - cpt
+    - etc
